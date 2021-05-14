@@ -108,7 +108,25 @@ main {
 }
 
 .start img {
-  margin-right: 0.5rem;
+  animation: flag 3s linear infinite;
+  margin-right: 0.8rem;
+}
+
+@keyframes flag {
+  0% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    -moz-transform: scaleX(1.4);
+    -o-transform: scaleX(1.4);
+    -webkit-transform: scaleX(1.4);
+    transform: scaleX(1.4);
+  }
+  
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 .card-left, .card-right {
@@ -198,4 +216,24 @@ footer a {
 footer a:hover {
   color: var(--violet-200);
   text-decoration: underline;
+}
+
+.card__content p {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.card__content img {
+  animation: rotate 3s linear infinite reverse;
+  margin-left: 0.5rem;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

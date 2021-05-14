@@ -44,6 +44,12 @@ $(document).on("scroll", function() {
 		$('#card-5').removeClass('animate');
 	}
 
+	if (documentTop > boxTop('#card-6') - 290) {
+		$('#card-6').addClass('animate');
+	} else {
+		$('#card-6').removeClass('animate');
+	}
+
 	//Funcionalidade para o botão de voltar ao topo:
 	if($(this).scrollTop() < 100){
 		//Para desaparecer entre 0 e 100px de rolagem do scroll.
