@@ -44,7 +44,7 @@ $(document).on("scroll", function() {
 		$('#card-5').removeClass('animate');
 	}
 
-	if (documentTop > boxTop('#card-6') - 300) {
+	if (documentTop > boxTop('#card-6') - 320) {
 		$('#card-6').addClass('animate');
 	} else {
 		$('#card-6').removeClass('animate');
